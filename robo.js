@@ -23,7 +23,6 @@ function stages(client, message) {
         case 'Nome':
             const nome = message.body;
             sendWppMessage(client, message.from, 'Obrigado, ' + nome);
-            sendWppMessage(client, message.from, 'Cardápio: www.google.com.br');
             sendWppMessage(client, message.from, 'Qual o seu *Pedido*:');
             userStages[message.from] = 'Pedido';
             break;
